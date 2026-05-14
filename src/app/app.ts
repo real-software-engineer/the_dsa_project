@@ -12,7 +12,7 @@ export class App implements OnInit {
   private http = inject(ApiService);
 
   ngOnInit() {
-    this.http.get('http://jsonplaceholder.typicode.com/posts').subscribe((res: any) => {
+    this.http.get('users').subscribe((res: any) => {
       console.log(res);
     });
   }
